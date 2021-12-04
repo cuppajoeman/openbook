@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.0"
+\version "2.22.1"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-49-g7f1149f" }
-				\fill-line { \small "Git commits: 1704" }
-				\fill-line { \small "Build date: 03:13:03 17-09-2021" }
-				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.11.0-25-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.0" }
+				\fill-line { \small "Git describe: 172-52-g7b9ffb6c" }
+				\fill-line { \small "Git commits: 1707" }
+				\fill-line { \small "Build date: 12:04:59 24-11-2021" }
+				\fill-line { \small "Build user: ccn" }
+				\fill-line { \small "Build host: ccn-4180cto" }
+				\fill-line { \small "Build kernel: Linux 5.13.19-2-MANJARO" }
+				\fill-line { \small "Lilypond version: 2.22.1" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null
 				\null
@@ -15731,24 +15731,24 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-	\partial 2 e4 f |
+	\partial 2 e4-1 f-2 |
 
 %% part "A"
 	\repeat volta 2 {
-		g2 b | a4 g e d | e1~ | e4 g e d |
-		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
-	} \alternative {
+		g2-3 b-10 | a4-9 g-3 e-1 d-0 | e1~-1 | e4-1 g-3 e-1 d-0 |
+		e-1 g-3 e-1 d-0 | e-1 c'2-11 e,4-1 | g1~-3 | g2-3 a4-9 b-10 |
+	} \alternative-1 {
 		{
 
 		%% part "B"
-			c2 c | c4 d2 b4 | a2 a | g e4 fis |
-			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
+			c2-11 c-11 | c4-11 d2-0 b4-10 | a2-9 a-9 | g-3 e4-1 fis-2 |
+			g2-3 g-3 | g4-3 a2-9 fis4-2 | g1~-3 | g4-3 r e-1 f-2 |
 		}
 		{
 
 		%% part "C"
-			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
-			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
+			c'2-11 c-11 | c4-11 d2-0 b4-10 | bes2-10 bes-10 | a-9 g4-3 f-2 |
+			e2-1 e-1 | d4-0 c'2-11 b4-10 | c1-11 | r2 e,4-1 f-2 |
 		}
 	}
 }

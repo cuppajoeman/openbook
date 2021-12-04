@@ -101,25 +101,27 @@
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key c \major
+    \override Fingering.staff-padding = #'()
 
-	\partial 2 e4 f |
+	\partial 2 e4-1 f-2 |
 
 	%% part "A"
 	\repeat volta 2 {
-		g2 b | a4 g e d | e1~ | e4 g e d |
-		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
+		g2-3 b-10 | a4-9 g-3 e-1 d-0 | e1~-1 | e4-1 g-3 e-1 d-0 |
+		e-1 g-3 e-1 d-0 | e-1 c'2-11 e,4-1 | g1~-3 | g2-3 a4-9 b-10 |
 	} \alternative {
 		{
 
+
 			%% part "B"
-			c2 c | c4 d2 b4 | a2 a | g e4 fis |
-			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
+			c2-11 c-11 | c4-11 d2-0 b4-10 | a2-9 a-9 | g-3 e4-1 fis-2 |
+			g2-3 g-3 | g4-3 a2-9 fis4-2 | g1~-3 | g4-3 r e-1 f-2 |
 		}
 		{
 
 			%% part "C"
-			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
-			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
+			c'2-11 c-11 | c4-11 d2-0 b4-10 | bes2-10 bes-10 | a-9 g4-3 f-2 |
+			e2-1 e-1 | d4-0 c'2-11 b4-10 | c1-11 | r2 e,4-1 f-2 |
 		}
 	}
 }

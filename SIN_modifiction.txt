@@ -1,0 +1,5 @@
+Here are
+'<,'>s/\(\([abcdefg]\)\(\(is\|es\)\?\([,']\)\?\d\?\(\~\)\?\)\)\( \)/\=submatch(1) .. '-' .. (((char2nr(submatch(2))-97)-3) + 12) %12 .. ' '/g
+
+
+\override Fingering.staff-padding = #'()

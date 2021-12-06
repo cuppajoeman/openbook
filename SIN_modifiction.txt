@@ -2,4 +2,33 @@ Here are
 '<,'>s/\(\([abcdefg]\)\(\(is\|es\)\?\([,']\)\?\d\?\(\~\)\?\)\)\( \)/\=submatch(1) .. '-' .. (((char2nr(submatch(2))-97)-3) + 12) %12 .. ' '/g
 
 
-\override Fingering.staff-padding = #'()
+% if part=='VoiceReal':
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
+    \override Fingering.staff-padding = #'()
+
+	\partial 2 e4-1 f-2 |
+
+	%% part "A"
+	\repeat volta 2 {
+		g2-3 b-10 | a4-9 g-3 e-1 d-0 | e1~-1 | e4-1 g-3 e-1 d-0 |
+		e-1 g-3 e-1 d-0 | e-1 c'2-11 e,4-1 | g1~-3 | g2-3 a4-9 b-10 |
+	} \alternative {
+		{
+
+
+			%% part "B"
+			c2-11 c-11 | c4-11 d2-0 b4-10 | a2-9 a-9 | g-3 e4-1 fis-2 |
+			g2-3 g-3 | g4-3 a2-9 fis4-2 | g1~-3 | g4-3 r e-1 f-2 |
+		}
+		{
+
+			%% part "C"
+			c'2-11 c-11 | c4-11 d2-0 b4-10 | bes2-10 bes-10 | a-9 g4-3 f-2 |
+			e2-1 e-1 | d4-0 c'2-11 b4-10 | c1-11 | r2 e,4-1 f-2 |
+		}
+	}
+}
+% endif
